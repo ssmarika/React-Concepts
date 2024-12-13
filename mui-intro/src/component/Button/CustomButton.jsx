@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import "./button.style.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
@@ -52,13 +52,28 @@ const CustomButton = () => {
       </section>
 
       <section className="button-section">
-        <h1>Icon Button</h1>
-        <Button variant="outlined" color="error" startIcon={<DeleteIcon />}>
+        <h1>Button with Icon</h1>
+        <Button
+          variant="outlined"
+          color="error"
+          startIcon={<DeleteIcon />}
+          onClick={() => {
+            console.log("Deleted");
+            alert("Deleted");
+          }}
+        >
           Delete Product
         </Button>
         <Button variant="outlined" color="success" endIcon={<EditIcon />}>
           Edit Product
         </Button>
+      </section>
+
+      <section className="button-section">
+        <h1>Icon Button</h1>
+        <IconButton color="error">
+          <DeleteIcon />
+        </IconButton>
       </section>
     </div>
   );
