@@ -1,6 +1,6 @@
 import CustomButton from "./component/Button/CustomButton";
 
-cardItem = [
+const cardItem = [
   {
     name: "Lizard",
     image: "assets/lizard.webp",
