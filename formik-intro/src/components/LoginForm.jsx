@@ -53,6 +53,7 @@ const LoginForm = () => {
                 <TextField
                   label="Password"
                   {...formik.getFieldProps("password")}
+                  type="password"
                 />
 
                 {formik.touched.password && formik.errors.password ? (
