@@ -1,4 +1,4 @@
-import CustomButton from "./component/Button/CustomButton";
+import CustomButton from "./component/button/CustomButton";
 
 const cardItem = [
   {
